@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contacto - Reginalda Randinho</title>
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="stylesheet" href="css/responsivo.css">
+</head>
+<body>
+
+  <header>
+    <h1>Reginalda Randinho</h1>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">Sobre/Currículo</a></li>
+        <li><a href="portfolio.html">Portfólio</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="contact.html" class="active">Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <h1>Entre em Contacto</h1>
+
+    <form action="#" method="post" enctype="multipart/form-data">
+      <fieldset>
+        <legend>Dados pessoais</legend>
+
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required minlength="3" placeholder="Digite o seu nome">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required placeholder="reginaldarandinho3@gmail.com">
+
+        <label for="telefone">Telefone:</label>
+        <input type="tel" id="telefone" name="telefone" pattern="[0-9]{9}" placeholder="869340655">
+<<<<<<< HEAD
+=======
+
+>>>>>>> eaca7ea (corrige caminhos CSS e adiciona folha de estilos responsiva)
+        <label for="data">Data preferida de contacto:</label>
+        <input type="date" id="data" name="data">
+
+        <label for="experiencia">Anos de experiência:</label>
+        <input type="number" id="experiencia" name="experiencia" min="0" max="50">
+
+        <label for="curriculo">Anexar CV (PDF):</label>
+        <input type="file" id="curriculo" name="curriculo" accept=".pdf">
+
+        <label for="assunto">Assunto:</label>
+        <select id="assunto" name="assunto">
+          <option value="orcamento">Orçamento</option>
+          <option value="duvida">Dúvida</option>
+        </select>
+
+        <p>Tipo de contacto:</p>
+        <label><input type="radio" name="tipo" value="pessoal"> Pessoal</label>
+        <label><input type="radio" name="tipo" value="trabalho"> Trabalho</label>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" required></textarea>
+
+        <button type="submit">Enviar</button>
+      </fieldset>
+    </form>
+  </main>
+
+  <footer>
+    <p>Email: reginaldarandinho3@gmail.com| Tel: +258 869340655</p>
+    <p>Desenvolvido por Reginalda Randinho</p>
+  </footer>
+
+</body>
+<<<<<<< HEAD
+</html>
+=======
+</html>
+>>>>>>> eaca7ea (corrige caminhos CSS e adiciona folha de estilos responsiva)

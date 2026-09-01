@@ -1,0 +1,10 @@
+Adicione os seus próprios ficheiros:
+img/perfil.jpg
+img/poster-video.jpg
+img/certificado.jpg
+img/projeto1.jpg
+img/projeto2.jpg
+img/projeto3.jpg
+video/apresentacao.mp4
+audio/apresentacao.mp3
+audio/hobby.mp3
