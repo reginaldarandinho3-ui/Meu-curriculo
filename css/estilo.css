@@ -1,141 +1,85 @@
-/* --- RESET E ESTILOS GERAIS --- */
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+/* --- ESTILOS ADICIONAIS PARA MELHORAR O PERFIL --- */
+
+/* Estilo para o contentor principal do perfil (onde estão a foto e o texto) */
+#perfil {
+    max-width: 960px; /* Define uma largura máxima para o conteúdo não ficar muito espalhado */
+    margin: 40px auto; /* Centraliza o contentor na página com espaçamento superior/inferior */
+    display: flex; /* Alinha a imagem e o texto lado a lado em ecrãs maiores */
+    flex-direction: column; /* Em ecrãs pequenos, empilha a imagem sobre o texto */
+    align-items: center; /* Centraliza os itens horizontalmente */
+    text-align: center; /* Centraliza o texto */
+    background-color: #fff; /* Fundo branco para destacar o perfil */
+    padding: 30px; /* Espaçamento interno */
+    border-radius: 10px; /* Cantos arredondados */
+    box-shadow: 0 5px 15px rgba(0,0,0,0.1); /* Uma sombra suave para profundidade */
 }
 
-body {
-  font-family: Arial, sans-serif;
-  line-height: 1.6;
-  color: #333;
-  background-color: #f4f4f9;
-  padding: 20px;
+/* Responsividade: Alinhamento horizontal em ecrãs maiores que 768px */
+@media (min-width: 768px) {
+    #perfil {
+        flex-direction: row; /* Coloca imagem e texto lado a lado */
+        text-align: left; /* Alinha o texto à esquerda */
+    }
 }
 
-/* --- CABEÇALHO E NAVEGAÇÃO --- */
-header {
-  background-color: #2c3e50;
-  color: #ffffff;
-  padding: 20px;
-  text-align: center;
-  border-radius: 6px;
-  margin-bottom: 20px;
+/* Estilo específico para a tua foto de perfil */
+#perfil-img {
+    width: 220px; /* Largura fixa para a foto (ajuste conforme necessário) */
+    height: 220px; /* Altura igual à largura para manter a proporção */
+    border-radius: 50%; /* Faz a foto ficar redonda */
+    object-fit: cover; /* Garante que a imagem preenche o círculo sem distorcer */
+    border: 5px solid #fff; /* Uma borda branca grossa para um efeito de moldura */
+    box-shadow: 0 8px 15px rgba(0,0,0,0.2); /* Sombra mais forte para destacar a foto */
+    margin: 0 auto 20px auto; /* Margem inferior para espaçamento do texto (centralizado) */
 }
 
-header h1 {
-  margin-bottom: 10px;
+/* Responsividade da imagem: Espaçamento lateral em ecrãs maiores */
+@media (min-width: 768px) {
+    #perfil-img {
+        margin: 0 40px 0 0; /* Margem direita para espaçamento do texto */
+    }
 }
 
-nav ul {
-  list-style: none;
-  display: flex;
-  justify-content: center;
-  gap: 15px;
+/* Estilo para a tua apresentação de texto */
+#perfil-texto {
+    flex: 1; /* Permite que o texto ocupe o resto do espaço disponível */
+    display: flex;
+    flex-direction: column;
+    justify-content: center; /* Centraliza o texto verticalmente em relação à imagem */
 }
 
-nav a {
-  color: #ffffff;
-  text-decoration: none;
-  font-weight: bold;
-  padding: 5px 10px;
-  border-radius: 4px;
+#perfil-texto .subtitulo {
+    font-size: 1.1rem; /* Tamanho do subtítulo 'Estudante de Informática' */
+    color: #888; /* Cor cinzenta para menos destaque */
+    margin-bottom: 5px;
 }
 
-nav a:hover,
-nav a.active {
-  background-color: #3498db;
+#perfil-texto .nome {
+    font-size: 2.5rem; /* Tamanho grande para o nome 'Sou Reginalda' */
+    font-weight: bold; /* Negrito */
+    color: #2c3e50; /* Cor do cabeçalho existente */
+    margin-bottom: 15px;
 }
 
-/* --- CONTEÚDO PRINCIPAL (MAIN) --- */
-main {
-  background: #ffffff;
-  padding: 25px;
-  border-radius: 6px;
-  max-width: 800px;
-  margin: 0 auto 20px auto;
-  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+#perfil-texto .apresentacao {
+    font-size: 1.2rem; /* Tamanho do parágrafo de apresentação */
+    color: #555; /* Cor um pouco mais escura que o padrão */
+    line-height: 1.8; /* Aumenta o espaçamento entre linhas para melhor leitura */
+    margin-bottom: 25px;
 }
 
-main h1 {
-  margin-bottom: 20px;
-  color: #2c3e50;
+/* Estilo para o link 'Entre em contacto' (parecido com um botão) */
+#perfil-texto .link-contacto {
+    display: inline-block; /* Permite definir largura/altura */
+    background-color: #2c3e50; /* Cor do teu cabeçalho */
+    color: #fff; /* Texto branco */
+    padding: 12px 24px; /* Espaçamento interno */
+    text-decoration: none; /* Remove o sublinhado padrão */
+    border-radius: 5px; /* Cantos arredondados */
+    font-weight: bold; /* Negrito */
+    transition: background-color 0.3s ease; /* Transição suave na cor */
 }
 
-/* --- FORMULÁRIO E FIELDSET (REQUISITOS DA SECÇÃO 6) --- */
-fieldset {
-  border: 1px solid #ccc;
-  padding: 20px;
-  border-radius: 6px;
+#perfil-texto .link-contacto:hover {
+    background-color: #1a252f; /* Cor mais escura no hover */
 }
-
-legend {
-  font-weight: bold;
-  padding: 0 10px;
-  color: #2c3e50;
-}
-
-form label {
-  display: block;
-  margin-top: 15px;
-  margin-bottom: 5px;
-  font-weight: bold;
-}
-
-form p {
-  margin-top: 15px;
-  font-weight: bold;
-}
-
-input[type="text"],
-input[type="email"],
-input[type="tel"],
-input[type="date"],
-input[type="number"],
-input[type="file"],
-select,
-textarea {
-  width: 100%;
-  padding: 10px;
-  border: 1px solid #ccc;
-  border-radius: 4px;
-  margin-top: 5px;
-}
-
-textarea {
-  height: 100px;
-  resize: vertical;
-}
-
-button[type="submit"] {
-  margin-top: 20px;
-  padding: 10px 25px;
-  background-color: #3498db;
-  color: white;
-  border: none;
-  border-radius: 4px;
-  cursor: pointer;
-  font-size: 16px;
-}
-
-button[type="submit"]:hover {
-  background-color: #2980b9;
-}
-
-/* --- RODAPÉ (FOOTER) --- */
-footer {
-  text-align: center;
-  padding: 15px;
-  background-color: #2c3e50;
-  color: white;
-  border-radius: 6px;
-  font-size: 14px;
-}
-
-footer p {
-  margin: 5px 0;
-<<<<<<< HEAD
-}
-=======
-}
->>>>>>> eaca7ea (corrige caminhos CSS e adiciona folha de estilos responsiva)
