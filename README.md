@@ -8,7 +8,7 @@
 - 
 - **Trabalho de: Programação e Design Web**
 - 
-- **DOCENTE** Daniel Gimo.
+- **DOCENTE**: Daniel Gimo.
 
 **Descrição:**
 Site pessoal de currículo e portfólio desenvolvido exclusivamente com **HTML5 e CSS3**, sem JavaScript e sem frameworks.
