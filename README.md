@@ -6,7 +6,7 @@
 - **CURSO:** 2º Ano de Licenciatura em Informática
 - **UNIVERSIDADE LICUNGO:** Faculdade de ciências e tecnologias
 - 
-- **TRABALHO DE: PROGRAMACAO e Design Web**
+- **TRABALHO de: Programação e Design Web**
 - 
 - **DOCENTE** Daniel Gimo.
 
