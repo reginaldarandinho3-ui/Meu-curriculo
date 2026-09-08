@@ -1,10 +1,14 @@
 # Meu Currículo Pessoal
 
-- **Nome:** Reginalda Hortencio francisco Randinho 
+- **Nome:** Reginalda Hortencio Francisco Randinho 
 - **Codigo do Estudante:** 04.2043.2025
 - **Contact:** 852428625 ou 869340655
 - **CURSO:** 2º Ano de Licenciatura em Informática
-- **UNIVERSIDADE LICUNGO:** Faculdade de ciências e tecnologias 
+- **UNIVERSIDADE LICUNGO:** Faculdade de ciências e tecnologias
+- 
+- **TRABALHO DE: PROGRAMACAO e Design Web**
+- 
+- **DOCENTE** Daniel Gimo.
 
 **Descrição:**
 Site pessoal de currículo e portfólio desenvolvido exclusivamente com **HTML5 e CSS3**, sem JavaScript e sem frameworks.
